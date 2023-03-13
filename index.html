@@ -1,286 +1,164 @@
 <!doctype html>
 <html lang="en">
-  <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head >
+   
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <style>
 
- html {
-  scroll-behavior: smooth;
-}
-
-.scrollbardiv::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollbardiv {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-
-</style>
   </head>
-  <body class="bg-#f2f2f2" style="overflow:scroll;
-  "  onscroll="j()">
+  <body>
+  
     
-    
-    <div class="w-100 border border-2 border-b-0  h-100 border-l-8 border-r-8 lg:mx-auto md:mx-auto"style="border-left-color:#ffb07e ; border-right-color:#ffb07e">
+    <div class="w-full ">
       
-      
-      <div class="w-[200px] flex items-center h-[40px] m-3 md:m-3 ">
-        
-        <input checked type="radio" value="" name="default-radio" class="w-4 h-4 text-orange-600   focus:ring-orange-500    " style="color:#ff6300 ;background-color:#ff6300;border-color:#ff6300;outline:none; accent-color: #ff6300;">
-    <label for="default-radio-1" class="ml-2 text-sm font-medium font-bold" style="color:#ff6300;">One Way</label>
-        
-           <input  id="default-radio-2" type="radio" value="" name="default-radio" class="ml-2 w-4 h-4 text-orange-600 bg-gray-100 border-gray-300 focus:ring-orange-500 dark:focus:ring-orange-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"style="color:#ff6300 ;background-color:#ff6300;border-color:#ff6300;outline:none; accent-color: #ff6300;">
-      <label for="default-radio-1" class="ml-2 text-sm font-medium font-bold text-gray-600" style="">Round Trip</label>
+      <div class="flex md:flex md:justify-between justify-between md:items-center items-center md:h-[40px] h-[40px] w-screen md:w-screen md:px-3 px-3 md:absolute absolute md:top-0 top-0 md:bg-[#2563eb] bg-[#2563eb] md:text-[white] md:font-semibold font-semibold text-[white]">
+        <div >Markets</div>
+       <img src="https://images.squarespace-cdn.com/content/v1/610d06c70defa36f38c81695/1631190676487-JI2X6XQ4EIH40U9FZXUI/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg?format=300w" alt="#" class="md:rounded-full rounded-full md:h-[30px] h-[30px] w-[30px] md:w-[30px]">
       </div>
       
       
-      
-     <div class="container p-4 md:p-3">
-       
-  <div class="grid grid-cols-2 gap-6 md:gap-8 md:grid-cols-5 lg:grid-cols-5">
-    
-    <div
-      class=""
-    >
-        <label for="small-input" class="block mb-2 text-sm font-medium text-gray-600 ml-1">From</label>
-            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-dark text-sm  focus:ring-orange-500 focus:border-orange-500 block w-full p-1 dark:bg-light-700 dark:border-gray-600  
-             dark:focus:ring-orange-500 dark:focus:border-orange-500 rounded-tl-lg rounded-bl-lg rounded-br-lg"style="outline:none" placeholder="John" required>
+      <div class="flex justify-between items-center mt-[40px]">
         
-    </div>
-   <div
-      class=""
-    >
-        <label for="small-input" class="block mb-2 text-sm font-medium text-gray-600  ml-1">to</label>
-            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-dark text-sm  focus:ring-orange-500 focus:border-orange-500 block w-full p-1 dark:bg-light-700 dark:border-gray-600  
-             dark:focus:ring-orange-500 dark:focus:border-orange-500 rounded-tl-lg rounded-bl-lg rounded-br-lg"style="outline:none" placeholder="John" required>
-        
-    </div>
-   <div
-      class=""
-    >
-        <label for="small-input" class="block  mb-2 text-sm font-medium text-gray-700 md:text-gray-700  ml-1">Departure date</label>
-            <input type="date" id="first_name" class="bg-gray-50 border border-gray-300 text-dark text-sm  focus:ring-orange-500 focus:border-orange-500 block w-full p-1 dark:bg-light-700 dark:border-gray-600  
-             dark:focus:ring-orange-500 dark:focus:border-orange-500 rounded-tl-lg rounded-bl-lg rounded-br-lg"style="outline:none" placeholder="Mumbai" required>
-        
-    </div>
-   <div
-      class=""
-    >
-       <label for="small-input" class="block md:mb-7 mb-7 text-sm font-medium text-gray-700 dark:text-white ml-1"></label>
-            <select id="countries" class="bg-gray-50 border border-gray-300 text-dark text-sm  focus:ring-orange-500 focus:border-orange-500 block w-full p-1 dark:bg-light-700 dark:border-gray-600  
-             dark:focus:ring-orange-500 dark:focus:border-orange-500 rounded-tl-lg rounded-bl-lg rounded-br-lg"style="outline:none" >
-  <option selected>Passenger(s)</option>
-  <option value="US">1</option>
-  <option value="CA">2</option>
-  <option value="FR">3</option>
-  <option value="DE">4</option>
-</select>
-        
-    </div>
-    <div
-      class=""
-    >
-             <label for="small-input" class="block md:mb-7 text-sm font-medium text-gray-600 dark:text-white ml-1"></label>
-
-        
-            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-dark text-sm  focus:ring-orange-500 focus:border-orange-500 block w-full p-1 dark:bg-light-700 dark:border-gray-600  
-             dark:focus:ring-orange-500 dark:focus:border-orange-500 rounded-tl-lg rounded-bl-lg rounded-br-lg"style="outline:none" placeholder="Promo Code" required>
-        
-    </div>
-  </div>
-</div> 
-</div>
-    
-    
-     <div class="flex m-5 md:m-5 ">
-
-       Special Fares
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-2">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+         <div class="searchbar m-2">
+              
+            <div class="h-[30px]  relative flex items-center border border-gray-400" >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 absolute left-1 ">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
 </svg>
-     </div>
-    
-    <div class="flex justify-between m-2 border-t-0 border-b-1 border"style="border-bottom-color:smoke;">
+
+              <input type="text" class="w-full pl-6 text-sm pr-1 outline-none" placeholder="Seacrh Stocks">
+
+              
+            </div>
+              
+            </div>
+        
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 mr-4 cursor-pointer">
+  <path d="M8.25 4.5a3.75 3.75 0 117.5 0v8.25a3.75 3.75 0 11-7.5 0V4.5z" />
+  <path d="M6 10.5a.75.75 0 01.75.75v1.5a5.25 5.25 0 1010.5 0v-1.5a.75.75 0 011.5 0v1.5a6.751 6.751 0 01-6 6.709v2.291h3a.75.75 0 010 1.5h-7.5a.75.75 0 010-1.5h3v-2.291a6.751 6.751 0 01-6-6.709v-1.5A.75.75 0 016 10.5z" />
+</svg>
+  </div>
       
-    <div class="grid grid-cols-1 gap-2 md:gap-2 md:grid-cols-4 lg:grid-cols-4">
-  <div class="flex justify-center items-center p-[1px] md:p-[1px]  bg-gray-200 rounded-xl md:text-center text-center text-sm md:text-sm">Armed Forces</div>
- <div  class="flex justify-center items-center p-[1px] md:p-[1px]  bg-gray-200 rounded-xl md:text-center text-center text-sm md:text-sm"> Medical Profesionals </div>
- <div  class="flex justify-center items-center p-[1px] md:p-[1px]  bg-gray-200 rounded-xl md:text-center text-center text-sm md:text-sm"> Student </div>
- <div  class="flex justify-center items-center p-[1px] md:p-[1px]  bg-gray-200 rounded-xl md:text-center text-center text-sm md:text-sm"> Unaccompained Minor </div>
-</div>
-      <div>
-      <button class="text-white text-sm font-bold py-2 px-4   rounded-tl-lg rounded-bl-lg rounded-br-lg  " style="background-color:#ff6300;outline:none">search Flights</button>
+      
+      <div cLass="h-[40px] w-full bg-[#0f172a] justify-between flex items-center p-3 text-[white] ">
+        <div>Symbol</div>
+        <div>LTP</div>
+      </div>
+      
+
+      <div class="h-screen border-rose-500 border">
+      <div class="h-[100%] overflow-y-scroll overflow-x-hidden divide-y divide-slate-300 p-2 border border-sky-500">
+        
+          <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
         </div>
-    </div>
-    
-    
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-    
-     <div style="overflow-x:scroll; width:100vw;overflow-y: hidden;background-color: white;
-z-index: 9999; "class="md:h-[177px] scrollbardiv ">
-       
+        
+        
+         <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
+        </div>
+        
+        
+        <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
+        </div>
+        
+        
+        
+        <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
+        </div>
+        
+        
+         <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
+        </div>
+        
+        
+        
+        
+         <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
+        </div>
+        
+        
+         <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
+        </div>
+        
+         <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
+        </div>
+        
+        
+        
+         <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+                <div class="flex flex-col item-end py-2">  <p class="text-center font-semibold text-sm">   640.23 \</p><p class="text-gray-600 text-[10px] font-semibold">(33.0) -(77.5%)</p></div>
+        </div>
+        
+        
+        
+        <div style="height:50px; " class="px-2 gap-2 flex justify-between items-center bg-[#f9faff]">
+                <p class="font-semibold text-sm">PAYTM</p>
+               <div class="flex items-center gap-4"> <div class="border border-teal-400 h-[22px] w-[20px] flex item-center text-center justify-center flex-col text-sm text-teal-400 rounded-sm bg-light font-bold">B</div> 
+               <div class="border border-red-500 h-[22px] w-[20px] flex item-center text-center p-1 justify-center flex-col text-sm text-red-500 rounded-sm">S</div>
+               
+               
+                <div class="border border-sky-500 h-[22px] w-[20px] flex item-center  justify-center text-sky-500 rounded-sm">       
+     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 mx-[1.4px]">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z" />
+</svg>
+      </div> 
+               
+               
+               <div class="border border-slate-800 h-[22px] w-[20px] flex item-center  justify-center  text-slate-800 rounded-sm"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mt-[1.5px]">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+</svg></div>
+  
+               
+</div>
          
-      <div style=" display:flex; " class="scr1  w-[1000px] md:w-[1000px] h-50 md:mt-[63px]  bg-gray-50  relative mt-5  p-3 md:mx-auto" >
+        </div>
         
-        <div class="text-xl hidden md:inline absolute left-0 bottom-[55px] " style="color:orange"><</div>
-    <div class="text-xl absolute right-0  ml-5 hidden md:inline  bottom-[55px]"style="color:orange">&gt</div>
         
-   <div class="w-[100px] h-[100px]  text-center  md:w-[100px] md:h-[96px] md:text-center font-bold" style="color:#ff6300; margin:0 46px;">26 jan<br> Thu <br> <span style="text-decoration: underline;text-underline-offset: 9px;">₹3,1909</span></div>
-      <div class="w-[100px] h-[100px]  text-center  md:w-[100px] md:h-[96px]  md:text-center font-bold" style=" margin:0 46px">26 jan<br> Thu <br> ₹3,1909</div>
-        <div class="w-[100px] h-[100px]text-center  md:w-[100px] md:h-[96px] md:text-center font-bold" style="margin:0 46px">26 jan<br> Thu <br> ₹3,1909</div>
-        <div class="w-[100px] h-[100px] text-center  md:w-[100px] md:h-[96px]  md:text-center font-bold" style=" margin:0 46px">26 jan<br> Thu <br> ₹3,1909</div>
-        <div class="w-[100px] h-[100px]  text-center  md:w-[100px] md:h-[96px] md:text-center font-bold" style="margin:0 46px">26 jan<br> Thu <br> ₹3,1909</div>
-        <div class="w-[100px] h-[100px] text-center  md:w-[100px] md:h-[96px] md:text-center font-bold" style=" margin:0 46px">26 jan<br> Thu <br> ₹3,1909</div>
         
-       
-</div>
-           
-    
-    </div>
-
-       
-       
-       
-       
-     
-        <div class="flex justify-between m-2">
-      
-    <div class="grid grid-cols-1 gap-2 md:gap-2 md:grid-cols-4 lg:grid-cols-4">
-  <div class="flex justify-center items-center md:text-center text-center text-sm md:text-sm font-bold" style="color:#ff6300;"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-4">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
-</svg> Price
-</div>
- <div  class="flex justify-center items-center md:text-center text-center text-sm md:text-sm font-bold" >Duration </div>
- <div  class="flex justify-center items-center md:text-center text-center text-sm font-bold md:text-sm">Departure Time</div>
-
-</div>
-      <div>
-     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
-</svg>
-
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
         </div>
     </div>
+        
     
-     
-       
-       
-       
-       
-       
-       
-       
-       
-        <div class="container mx-auto bg-light-500 border border-smoke-100">
-       
-  <div class="grid grid-cols-4 gap-6 md:gap-8 md:grid-cols-4 lg:grid-cols-4">
+    <p>chart page</p>
     
-    <div
-      class="w-[80px] h-[100px] flex items-center justify-center flex-col"
-    >
-        <span class="font-bold">07:35 </span><br>
-     <span class="text-gray-700">AMD (T1)</span> <br>
-      
-     <span class="text-gray-700">A QP1114</span> 
-    </div>
-   <div
-      class="flex items-center justify-center flex-col" 
-    >
-     
-       <div class="w-full border relative"style="border-color:#5c0fd9 "></div>
-     <div class="absolute z-50 text-gray-600 w-[60px] h-[10px]  text-center mb-10">1 20m
-          <br>
-    Non-stop
-          </div>
-    </div>
-   <div
-      class="flex items-center justify-center flex-col"
-    >
-     <span class="font-bold">08:35 </span>
-      <br>
-          <span class="text-gray-700">AMD (T1)</span>
-      
-    </div>
-   <div
-      class=" flex items-center justify-center flex-col "
-    >
-     <span class="font-bold">  ₹3333 </span>
-  
-      <br>
-     <div>
-      <button class="text-white font-bold py-1 px-2 rounded-tl-lg rounded-bl-lg rounded-br-lg text-sm  my-2 " style="background-color:#ff6300;outline:none "><a href="ndindex.html" style="color:white;text-decoration:none;">Select</a></button>
-        </div>
-    </div>
-   
-  </div>
-</div> 
-       
-       <div class="container mx-auto  my-5 bg-light-500 border border-smoke-100">
-       
-  <div class="grid grid-cols-4 gap-6 md:gap-8 md:grid-cols-4 lg:grid-cols-4">
     
-    <div
-      class="w-[80px] h-[100px] flex items-center justify-center flex-col"
-    >
-        <span class="font-bold">07:35 </span><br>
-     <span class="text-gray-700">AMD (T1)</span> <br>
-     
-     <span class="text-gray-700">A QP1114</span> 
-    </div>
-   <div
-      class="flex items-center justify-center flex-col" 
-    >
-     
-       <div class="w-full border relative"style="border-color:#5c0fd9 "></div>
-     <div class="absolute z-50 text-gray-600 w-[60px] h-[10px]  text-center mb-10">1 20m
-          <br>
-    Non-stop
-          </div>
-    </div>
-   <div
-      class="flex items-center justify-center flex-col"
-    >
-     <span class="font-bold">08:35 </span>
-      <br>
-          <span class="text-gray-700">AMD (T1)</span>
+    <div cLass="h-full  w-full bg-[#0f172a]   pl-4 text-[white] ">
+        <p class="">PAYTM</p>
+        <span class="text-sm font-bold">555.5 (555.5)</span>
+       
+      </div>
       
-    </div>
-   <div
-      class=" flex items-center justify-center flex-col "
-    >
-     <span class="font-bold">  ₹3333 </span>
-  
-      <br>
-     <div>
-      <button class="text-white font-bold py-1 px-2 rounded-tl-lg rounded-bl-lg rounded-br-lg text-sm  my-2 " style="background-color:#ff6300;outline:none "><a href="rdindex.html" style="color:white;text-decoration:none;">Select</a></button></button>
-        </div>
-    </div>
-   
-  </div>
-</div> 
-       
-       
-       
-       
+    
     
 <script src="https://cdn.tailwindcss.com"></script>
-    
-  
-   
-  </body>
+      </body>
 </html>
